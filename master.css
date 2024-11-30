@@ -1,0 +1,154 @@
+/* Start Global Rules */
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  font-size: 13px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+/* End Global Rules */
+/* Start Testimonials */
+
+.testimonials {
+  margin-top: 60px;
+  display: grid;
+  grid-template-areas:
+    "card-one card-one card-two card-five"
+    "card-three card-four card-four card-five";
+  gap: 2rem;
+}
+
+@media (max-width: 991px) {
+  .testimonials {
+    grid-template-areas:
+      "card-one card-one card-one card-two"
+      "card-three card-four card-four card-four"
+      "card-five card-five card-five card-five";
+  }
+}
+@media (max-width: 768px) {
+  .testimonials {
+    grid-template-areas:
+      "card-one "
+      "card-two "
+      "card-three "
+      "card-four"
+      "card-five";
+    gap: 15px;
+  }
+}
+
+.box {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.card-one {
+  grid-area: card-one;
+  background-color: #7541c8;
+}
+
+.card-two {
+  grid-area: card-two;
+  background-color: #48556a;
+}
+
+.card-three {
+  grid-area: card-three;
+  background-color: white;
+}
+
+.card-four {
+  grid-area: card-four;
+  background-color: #19212e;
+}
+
+.card-five {
+  grid-area: card-five;
+  background-color: white;
+}
+
+.box .define {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.define img {
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.info h2 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: white;
+}
+
+.card-three h2,
+.card-five h2,
+.card-three .testmonial p,
+.card-five .testmonial p {
+  color: black;
+}
+
+.info span {
+  color: #cfcfcf;
+}
+
+.testmonial p {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bio p {
+  font-size: 11px;
+  color: #cfcfcf;
+}
+
+/* End Testimonials */
